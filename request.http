@@ -2,13 +2,13 @@ POST http://localhost:3333/videos
 Content-type: application/json
 
 {
-    "title": "Vídeo 01",
-    "description": "Esse é o primeiro vídeo",
+    "title": "Vídeo Node",
+    "description": "Esse é o primeiro vídeo em Node",
     "duration": 180
 }
 
 ###
-GET http://localhost:3333/videos
+GET http://localhost:3333/videos?search=node
 
 ###
 PUT http://localhost:3333/videos/d2447e6c-4fcf-4a5f-a8e5-fb9a0deef091
