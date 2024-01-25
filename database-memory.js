@@ -4,7 +4,8 @@ export class DatabaseMemory {
     #videos = new Map();
 
     list(search) {
-        return Array.from(this.#videos.entries())
+
+        const filteredVideos = Array.from(this.#videos.entries())
             .map((videoArray) => {
                 const id = videoArray[0];
                 const data = videoArray[1];
@@ -21,6 +22,8 @@ export class DatabaseMemory {
 
                 return true
             });
+
+            return filteredVideos;
     }
 
     create(video) {

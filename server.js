@@ -30,7 +30,6 @@ server.post('/videos', (request, reply) => {
 server.get('/videos', (request) => {
     const search = request.query.search;
 
-    
     const videos = database.list(search);
 
     return videos;
